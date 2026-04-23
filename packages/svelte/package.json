@@ -1,0 +1,44 @@
+{
+  "name": "@base-ui/svelte",
+  "version": "0.1.0",
+  "author": "MUI Team",
+  "description": "Base UI headless Svelte 5 components — unstyled, accessible, and framework-native.",
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "svelte-component",
+    "mui",
+    "unstyled",
+    "base-ui",
+    "a11y",
+    "headless"
+  ],
+  "type": "module",
+  "exports": {
+    "./button": "./src/button/index.ts",
+    "./checkbox": "./src/checkbox/index.ts",
+    "./collapsible": "./src/collapsible/index.ts",
+    "./progress": "./src/progress/index.ts",
+    "./separator": "./src/separator/index.ts",
+    "./switch": "./src/switch/index.ts"
+  },
+  "svelte": "./src/index.ts",
+  "peerDependencies": {
+    "svelte": ">=5.0.0"
+  },
+  "devDependencies": {
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typescript": "6.0.2"
+  },
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
